@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.GatewayActivity"
+    android:background="@color/clrDarkBlue"
+    android:gravity="center"
+    android:keepScreenOn="true">
+    <LinearLayout
+        android:id="@+id/top_Bar_Splash"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0"
+        android:background="@color/colorBlack"
+        android:fontFamily="@font/avenir"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/top_bar_hedding_splah"
+            android:layout_width="265dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/avenir"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:lineSpacingExtra="10sp"
+            android:text="Configuration "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="47.8dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="#1c1c1c"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="33.3dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_logo_n" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="60dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="268dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_40"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_weight="2"
+            android:background="@color/clrDarkBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/lbl_appName3"
+                android:layout_width="101dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/avenir"
+                android:text="Step 03 "
+                android:textColor="#3F9C41"
+                android:textSize="@dimen/text_size_19_3"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/lbl_appName2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lbl_appName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/avenir"
+                android:gravity="center_horizontal"
+                android:text="Configuration "
+                android:textColor="@color/clr_lightBlue"
+                android:textSize="@dimen/text_size_19_3"
+                app:layout_constraintEnd_toStartOf="@+id/lbl_appName3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="211dp"
+                android:layout_height="178dp"
+                android:layout_above="@+id/lbl_appName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="95dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl_appName3"
+                app:srcCompat="@drawable/ic_login_image" />
+
+            <TextView
+                android:id="@+id/lbl_appName"
+                android:layout_width="211dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="19dp"
+                android:fontFamily="@font/avenir"
+                android:gravity="center_horizontal"
+                android:text="Smart Kitchen"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_19_3"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="0.027" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="257dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_40"
+            android:layout_marginEnd="@dimen/margin_40"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_weight="1"
+            android:background="@color/clrDarkBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvLoginHeading"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/avenir"
+                android:text="Select Location"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_22"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/lutusername"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.214" />
+
+            <LinearLayout
+                android:id="@+id/lutusername"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="72dp"
+                android:background="#343434"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_location_pin" />
+                <Spinner
+                    android:id="@+id/gateway_spinner"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLoginHeading"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:background="@drawable/spinner_bg"
+                    android:dropDownWidth="wrap_content"
+                    android:dropDownSelector="@color/colorWhite"
+                    android:fontFamily="@font/avenir"
+                    android:padding="5dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bnGatewayOk"
+                android:layout_width="152dp"
+                android:layout_height="52dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="74dp"
+                android:background="@drawable/ir_cancel_button"
+                android:fontFamily="@font/avenir"
+                android:onClick="bnGatewayCancel"
+                android:text="CANCEL"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_22"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/bnGatewayCancel"
+                android:layout_width="152dp"
+                android:layout_height="52dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="74dp"
+                android:background="@drawable/drawable_ir_on_button"
+                android:fontFamily="@font/avenir"
+                android:onClick="getSelectedGateway"
+                android:text="SAVE"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_22"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/bnGatewayOk" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>
+

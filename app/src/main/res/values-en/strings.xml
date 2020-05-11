@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TeaCoffeeBackend</string>
+    <string name="sync_again">Sync Again</string>
+    <string name="server">Server</string>
+    <string name="displayName">Kitchen Display</string>
+
+    <string name="label_bt">Black Tea</string>
+    <string name="label_mt">Milk Tea</string>
+    <string name="label_co">Coffee</string>
+    <string name="label_m">Milk</string>
+    <string name="label_with_sugar">(With Sugar)</string>
+    <string name="label_without_sugar">(Without Sugar)</string>
+    <string name="label_order">Order</string>
+    <string name="label_confirm_order">Accept Order</string>
+    <string name="label_total">Total Tea Count</string>
+    <string name="label_deleivery_option">Delivery Option</string>
+    <string name ="label_empty_screen">NO ITEMS FOUND</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/settings"
+        android:icon="@drawable/three_dot_36dp_white"
+        android:title="Settings"
+        app:showAsAction="ifRoom"/>
+        <item android:id="@+id/en"
+            android:title="English"
+            app:showAsAction="never">
+        </item>
+        <item android:id="@+id/si"
+            android:title="Sinhala"
+            app:showAsAction="never">
+        </item>
+        <item android:id="@+id/tl"
+            android:title="Tamil"
+            app:showAsAction="never">
+        </item>
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never">
+    </item>
+</menu>

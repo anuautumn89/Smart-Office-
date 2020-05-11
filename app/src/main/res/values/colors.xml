@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightBlue500">#03A9F4</color>
+    <color name="lightBlue700">#5280B1</color>
+    <color name="lightBlue800">#0277BD</color>
+    <color name="lightBlue900">#01579B</color>
+    <color name="orangeA200">#FF3D00</color>
+    <color name="purpleA200">#E040FB</color>
+    <color name="redA200">#FF5252</color>
+    <color name="colorGreen">#32c20b</color>
+    <color name="tabsScrollColor">#8a140e</color>
+
+    <!--#3F51B5</color>-->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryLight">#44bdea</color>
+    <color name="colorPrimaryDark">#546E7A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDisable">#AAAAAA</color>
+    <color name="colorGray">#CCCCCC</color>
+    <color name="colorGrayLight">#EDEDED</color>
+    <color name="colorGrayDark">#333333</color>
+    <!--<color name="bgColor">#305c49</color>-->
+    <color name="bgColor2">#00BCD4</color>
+    <color name="bgColor">#C9DDE7</color>
+
+    <color name="colorTransparent">#80000000</color>
+    <color name="colorBlackTransparentDark">#95000000</color>
+    <color name="colorWhiteTransparent">#10FFFFFF</color>
+
+    <color name="colorTransparent1">#6000FF00</color>
+    <color name="colorTransparent2">#30FFFFFF</color>
+    <color name="colorFullTransparent">#00000000</color>
+    <color name="colorTextBgTransparent">#80FFFFFF</color>
+    <color name="colorTransparentGreen">#5000FF00</color>
+    <color name="colorTransparentRed">#FF5252</color>
+
+    <!--<color name="toolbarColor">#0e3a27</color>-->
+    <color name="toolbarColor">#E1E1E1</color>
+    <color name="bottomTextColor">#6c757c</color>
+    <color name="topHeadingTextColor">#7dd0e1</color>
+    <color name="bgColorInternal">#7c838d</color>
+    <color name="bgColorThumbImages">#5f6773</color>
+
+    <!--Dashboard Tile colors-->
+    <color name="colorDashItem1A">#f3df00</color>
+    <color name="colorDashItem1B">#F18401</color>
+    <color name="colorDashItem1C">#12c3d8</color>
+    <color name="colorDashItem1D">#32c20b</color>
+    <color name="colorDashItem1E">#d1103d</color>
+    <color name="colorDashItem2A">#d010b7</color>
+    <color name="colorDashItem2B">#2a7031</color>
+    <color name="colorDashItem2C">#ed0212</color>
+    <color name="colorDashItem2D">#0077b9</color>
+    <color name="colorDashItem2E">#f3df00</color>
+    <color name="colorDashItem3A">#0077b9</color>
+    <color name="colorDashItem3B">#6f9727</color>
+    <color name="colorDashItem3C">#e07900</color>
+    <color name="colorDashItem3D">#800d8e</color>
+    <color name="colorDashItem3E">#d1103d</color>
+
+    <color name="colorRed">#FF2212</color>
+    <color name="pressed_color">#4d90fe</color>
+    <color name="text_color">#666666</color>
+    <color name="colorLightGray">#EEEEEE</color>
+
+    <color name="colorGreen900">#263238</color>
+    <color name="colorGreen800">#37474F</color>
+    <color name="colorGreen700">#455A64</color>
+    <color name="colorGreen600">#546E7A</color>
+    <color name="colorGreen500">#607D8B</color>
+    <color name="colorGreen400">#78909C</color>
+    <color name="colorGreen300">#90A4AE</color>
+    <color name="colorGreen200">#B0BEC5</color>
+
+    <color name="clrDarkBlue">#151724</color>
+    <color name="dark_grey_blue">#2b4364</color>
+    <color name="dark_blue_">#1A2C44</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#45b649</color>
+    <color name="clr_btn_blue">#33cede</color>
+    <color name="clr_lightBlue">#139cb5</color>
+    <color name="yellow">#F8E71C</color>
+
+    <color name="clr_cancelButton">#f3f3f3</color>
+    <color name="transparenttxtColor">#d8d8d8</color>
+    <color name="teaCoffeeBgColor">#eee7c9</color>
+    <color name="button_blue">#4986e7</color>
+    <color name="popup_bg_light_blue">#e1f1ff</color>
+    <color name="blue_border">#5280B1</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

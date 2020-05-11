@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lout_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clrDarkBlue"
+    tools:context=".views.SplashActivity">
+
+    <ImageView
+        android:id="@+id/deuron_icon_splash"
+        android:layout_width="74.7dp"
+        android:layout_height="119.3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="309.3dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="298.3dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_icon_deuron"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="211dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="280.7dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="81dp"
+        android:fontFamily="@font/avenir"
+        android:gravity="center_horizontal"
+        android:text="Tea /Coffee"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_19_3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deuron_icon_splash" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="37.8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="291.3dp"
+        android:layout_marginEnd="291.3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_logo_n" />
+
+
+    <LinearLayout
+        android:id="@+id/top_Bar_Splash"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0"
+        android:background="@color/colorBlack"
+        android:fontFamily="@font/avenir"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/deuron_icon_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/top_bar_hedding_splah"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="7.3dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/avenir"
+            android:lineSpacingExtra="10sp"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="47.8dp"
+            android:layout_height="match_parent"
+            android:background="#1c1c1c">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="33.3dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_logo_n" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

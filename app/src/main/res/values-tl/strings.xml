@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TeaCoffeeBackend</string>
+    <string name="sync_again">Sync Again</string>
+    <string name="server">Server</string>
+    <string name="displayName">Kitchen Display</string>
+
+    <string name="label_bt">கருப்பு தேநீர்</string>
+    <string name="label_mt">பால் தேநீர்</string>
+    <string name="label_co">கொட்டைவடி நீர்</string>
+    <string name="label_m">பால்</string>
+    <string name="label_with_sugar">(சர்க்கரையுடன்)</string>
+    <string name="label_without_sugar">(சர்க்கரை இல்லாமல்)</string>
+    <string name="label_order">ஆர்டர்</string>
+    <string name="label_confirm_order">ஆணையை ஏற்றுக்கொள்</string>
+    <string name="label_total">மொத்த எண்ணிக்கை</string>
+    <string name="label_deleivery_option">டெலிவரி விருப்பம்</string>
+    <string name ="label_empty_screen">NO ITEMS FOUND</string>
+</resources>

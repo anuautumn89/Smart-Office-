@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TeaCoffeeBackend</string>
+    <string name="sync_again">Sync Again</string>
+    <string name="server">Server</string>
+    <string name="displayName">Kitchen Display</string>
+
+    <string name="label_bt">කළු තේ</string>
+    <string name="label_mt">කිරි තේ</string>
+    <string name="label_co">කෝපි</string>
+    <string name="label_m">කිරි</string>
+    <string name="label_with_sugar">(සීනි සහිත)</string>
+    <string name="label_without_sugar">(සීනි රහිත)</string>
+    <string name="label_order">ඇණවුම</string>
+    <string name="label_confirm_order">ඇණවුම පිළිගන්න</string>
+    <string name="label_total">සම්පූර්ණ එකතුව</string>
+    <string name="label_deleivery_option">බෙදා හතත්වය</string>
+    <string name ="label_empty_screen">අයිතම කිසිවක් හමු නොවීය</string>
+
+</resources>
