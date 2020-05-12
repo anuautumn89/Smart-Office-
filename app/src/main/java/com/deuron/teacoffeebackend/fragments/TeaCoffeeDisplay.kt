@@ -96,42 +96,42 @@ class TeaCoffeeDisplay : Fragment() {
         btnRequestOrder = view.findViewById<Button>(R.id.btnRequestOrder)
         lutClose = view.findViewById(R.id.lutClose)
 
-        if (orderPayload.getOrderItems()!!.getBLackTeaS() != ""){
-            txtBTSCount.text = orderPayload.getOrderItems()!!.getBLackTeaS()
-            lutTeaWithSugar.visibility = View.VISIBLE
-        }
-        if(orderPayload.getOrderItems()!!.getBlackTeaNs() != ""){
-            txtBTNSCount.text = orderPayload.getOrderItems()!!.getBlackTeaNs()
-            lutBTWithOutSugar.visibility = View.VISIBLE
-        }
-        if (orderPayload.getOrderItems()!!.getMilkTeaS() != ""){
-            txtMTSCount.text = orderPayload.getOrderItems()!!.getMilkTeaS()
-            lutMTeaWithSugar.visibility = View.VISIBLE
-        }
-        if(orderPayload.getOrderItems()!!.getMilkTeaNs() != ""){
-            txtMTNSCount.text = orderPayload.getOrderItems()!!.getMilkTeaNs()
-            lutMTWithOutSugar.visibility = View.VISIBLE
-        }
-        if(orderPayload.getOrderItems()!!.getCoffeeS() != ""){
-            txtCSCount.text = orderPayload.getOrderItems()!!.getCoffeeS()
-            lutCWithSugar.visibility = View.VISIBLE
-        }
-        if (orderPayload.getOrderItems()!!.getCoffeeNs() != ""){
-            txtCNSCount.text = orderPayload.getOrderItems()!!.getCoffeeNs()
-            lutCWithOutSugar.visibility = View.VISIBLE
-        }
-        if(orderPayload.getOrderItems()!!.getMilkS() != ""){
-            txtMilkSCount.text = orderPayload.getOrderItems()!!.getMilkS()
-            lutMilkWithSugar.visibility = View.VISIBLE
-        }
-        if(orderPayload.getOrderItems()!!.getMilkNs() != ""){
-            txtMilkNSCount.text = orderPayload.getOrderItems()!!.getMilkNs()
-            lutMilkWithOutSugar.visibility = View.VISIBLE
-        }
-        txtTotaItemCount.text = getTotalBeverageCount(orderPayload.getOrderItems()!!)
-        txtDeliveryTime.text = languageStrng(orderPayload.getDelivery()!!.getDeliverySi(),orderPayload.getDelivery()!!.getDeliveryEn(),orderPayload.getDelivery()!!.getDeliveryTl(),
-            currentLanguage)
-        txtOrderNo.text = orderId.toString()
+//        if (orderPayload.getOrderItems()!!.getBLackTeaS() != ""){
+//            txtBTSCount.text = orderPayload.getOrderItems()!!.getBLackTeaS()
+//            lutTeaWithSugar.visibility = View.VISIBLE
+//        }
+//        if(orderPayload.getOrderItems()!!.getBlackTeaNs() != ""){
+//            txtBTNSCount.text = orderPayload.getOrderItems()!!.getBlackTeaNs()
+//            lutBTWithOutSugar.visibility = View.VISIBLE
+//        }
+//        if (orderPayload.getOrderItems()!!.getMilkTeaS() != ""){
+//            txtMTSCount.text = orderPayload.getOrderItems()!!.getMilkTeaS()
+//            lutMTeaWithSugar.visibility = View.VISIBLE
+//        }
+//        if(orderPayload.getOrderItems()!!.getMilkTeaNs() != ""){
+//            txtMTNSCount.text = orderPayload.getOrderItems()!!.getMilkTeaNs()
+//            lutMTWithOutSugar.visibility = View.VISIBLE
+//        }
+//        if(orderPayload.getOrderItems()!!.getCoffeeS() != ""){
+//            txtCSCount.text = orderPayload.getOrderItems()!!.getCoffeeS()
+//            lutCWithSugar.visibility = View.VISIBLE
+//        }
+//        if (orderPayload.getOrderItems()!!.getCoffeeNs() != ""){
+//            txtCNSCount.text = orderPayload.getOrderItems()!!.getCoffeeNs()
+//            lutCWithOutSugar.visibility = View.VISIBLE
+//        }
+//        if(orderPayload.getOrderItems()!!.getMilkS() != ""){
+//            txtMilkSCount.text = orderPayload.getOrderItems()!!.getMilkS()
+//            lutMilkWithSugar.visibility = View.VISIBLE
+//        }
+//        if(orderPayload.getOrderItems()!!.getMilkNs() != ""){
+//            txtMilkNSCount.text = orderPayload.getOrderItems()!!.getMilkNs()
+//            lutMilkWithOutSugar.visibility = View.VISIBLE
+//        }
+       // txtTotaItemCount.text = getTotalBeverageCount(orderPayload.getOrderItems()!!)
+        //txtDeliveryTime.text = languageStrng(orderPayload.getDelivery()!!.getDeliverySi(),orderPayload.getDelivery()!!.getDeliveryEn(),orderPayload.getDelivery()!!.getDeliveryTl(),
+         //   currentLanguage)
+        //txtOrderNo.text = orderId.toString()
 
         btnRequestOrder.setOnClickListener{
             sharedPref = this.context!!.getSharedPreferences(mcontext.getString(R.string.app_name), Context.MODE_PRIVATE)
@@ -208,10 +208,16 @@ class TeaCoffeeDisplay : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(context: Context?, orderPayload: OrderResponse?) =
+//        fun newInstance(context: Context?, orderPayload: OrderResponse?) =
+//            TeaCoffeeDisplay().apply {
+//                this.orderId = orderPayload!!.getId()!!.toInt()
+//                this.orderPayload = orderPayload.getPayload()!!
+//                this.mcontext = context!!
+//            }
+        fun newInstance(context: Context?) =
             TeaCoffeeDisplay().apply {
-                this.orderId = orderPayload!!.getId()!!.toInt()
-                this.orderPayload = orderPayload.getPayload()!!
+               // this.orderId = orderPayload!!.getId()!!.toInt()
+               // this.orderPayload = orderPayload.getPayload()!!
                 this.mcontext = context!!
             }
     }

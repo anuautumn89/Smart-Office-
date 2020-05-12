@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity(), OrderItemFragment.OnItemSelectedListen
         if (mqttUsername != "") mqttConnectOptions.userName = mqttUsername
         if (mqttPassword != "") mqttConnectOptions.password = mqttPassword.toCharArray()
         fragmentContainer = findViewById(R.id.fragmentContainer)
-        subscribeTopics()
+        //subscribeTopics()
         //TODO REMOVE LATER
         temp()
     }
@@ -246,14 +246,14 @@ class MainActivity : AppCompatActivity(), OrderItemFragment.OnItemSelectedListen
 
     //List Item OnClick event (Send data from fragment to host activity)
     override fun onItemClicked(position: Int, orderResponse: OrderResponse?) {
-        var teaCoffeeDisplay = TeaCoffeeDisplay.newInstance(context, orderResponse)
-        loadFragment(teaCoffeeDisplay)
+       // var teaCoffeeDisplay = TeaCoffeeDisplay.newInstance(context, orderResponse)
+       // loadFragment(teaCoffeeDisplay)
     }
     //TODO ---TEMP USE
     fun temp(){
         var orderRes = OrderResponse()
-        var teaCoffeeDisplay = TeaCoffeeDisplay.newInstance(context, orderRes)
-        loadFragment(orderItemFragment)
+        var teaCoffeeDisplay = TeaCoffeeDisplay.newInstance(context)
+        loadFragment(teaCoffeeDisplay)
     }
     //Order updated /order item closed
     override fun onButtonClicked(action:String) {
